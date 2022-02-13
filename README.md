@@ -13,3 +13,12 @@ Configuration Playing Board ( Size i.e.,16 X 16)
 The Spider location (12,9) and the Ant location (5,5).
 
 ![Screenshot 2022-02-13 100745](https://user-images.githubusercontent.com/99129061/153744631-5730ab19-8a0c-41a7-b8ad-e83274597f8b.png)
+
+## Assignment Objectives
+### Implement the Spider game.
+### Implement a Breadth_First Search for the spider to play the game.
+### Implement Depth_First Search for the spider to play the game.
+### Implement A* search.
+### Implement two (2) different heuristics for the spider to play the game.
+### Implement a third heuristic which takes the average of the first two heuristics.
+### Write a short report (no more than two (2) pages) about the state space of the game, and about the choice of your heuristics.
