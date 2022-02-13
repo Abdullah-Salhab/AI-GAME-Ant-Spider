@@ -18,6 +18,7 @@ The Spider location (12,9) and the Ant location (5,5).
 
 ![Screenshot 2022-02-13 100745](https://user-images.githubusercontent.com/99129061/153744631-5730ab19-8a0c-41a7-b8ad-e83274597f8b.png)
 
+
 ## Assignment Objectives
 1. Implement the Spider game.
 1. Implement a Breadth_First Search for the spider to play the game.
