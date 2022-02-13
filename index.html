@@ -1,0 +1,105 @@
+<!-- 
+	Name : Abdullah Salhab
+	ID : 1833665
+	Course : Ai
+ -->
+<html>
+<head>
+	<title>AI Spider-Ant Game</title>
+	<meta name=viewport content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/Game_styles.css">
+	<script src="js/Spider_Ant_game.js"></script>
+</head>
+<body onload="first();">
+	<img src="img/background.gif" alt="background" id="background">
+	<div id="all">
+		<div id="container">
+			<canvas id="Game_canvas" width="700" height="700"></canvas>
+		</div>
+		<div id="info" >
+			<div id="enter_data">
+				<input type="button" class="button" id="start" value="Start" onclick="start(); ">
+				<input type="button" class="button" id="restart2" value="Restart" onclick="restart();">
+				<input type="button" class="button" id="stop" value="Stop" onclick="stop();">
+				<select id="algo" onchange="change_search();">
+					<option>BFS</option>
+					<option>DFS</option>
+					<option>A* Heuristic 1 </option>
+					<option>A* Heuristic 2</option>
+					<option>A* (H1+H2)/2</option>
+				</select>
+			</div>
+			<div id="features">
+				<div><label>Change path each step : <input type="checkbox" name="change_path" id="change_path"
+							oninput="change_path()" ></label></div>
+				<div><label>Stop music : <input type="checkbox" name="stop_sound" id="stop_sound"
+							oninput="stop_music()" ></label></div>
+				<div><label>Move ant : <input type="checkbox" name="ant_move" id="ant_move" oninput="ant_move()" checked></label>
+				</div>
+				<label>Disable border : <input type="checkbox" name="board_disable" id="board_disable"
+						oninput="outside_bord()" checked></label><br>
+				<div><label> Change Speed :
+						<input type="range" name="speed" id="speed" value="500" min="0" max="1000" oninput="change_speed()">
+						<label id="result_speed" > 5 </label></label></div>
+			</div><br>
+			<div id="spider_count"> Spider Wins : <span id="food_val"></span></div>
+			<div id="ant_count"> Ant Wins : <span id="ant_win"></span></div><br><br>
+			<div id="moves">
+			<div> Total Moves: <span id="moves_num"></span></div>
+			<div> Average Moves : <span id="avg_moves_num"></span></div>
+			<div> Average Nodes Processed  : <span id="avg_nodes_val"></span></div>
+			</div>
+		</div>
+	</div>
+	<div id="finish_statment">
+			<label> The Game Finished You Lost <br> </label>
+			<label>To Restart the game press : <br>
+				<div id="restart" onclick="restart()">Restart</div>
+			</label>
+	</div>
+	<div id="blur"></div>
+	<div class="button" id="go_to"><a href="#box1">Go to the Information</a></div>
+	<div id="hide">
+		<img id="image" src="img/ant-resizeimage.png">
+		<img id="image2" src="img/spider-resizeimage.png">
+		<img id="image3" src="img/wood1.jpg">
+		<img id="image4" src="img/wood2.jpg">
+		<img id="image5" src="img/wall5.jpg">
+		<img id="image6" src="img/next-resizeimage.png ">
+		<audio id="eat_sound" src="sounds/eat.mp3" preload="auto" controls></audio>
+		<audio id="game_over" src="sounds/game_over.mp3" preload="auto" controls></audio>
+		<audio id="ant_out" src="sounds/ant_out.mp3" preload="auto" controls volume="0.7"></audio>
+		<audio id="music" src="sounds/music.mp3" preload="auto" controls loop></audio>
+	</div>
+	<div id="box1">
+	<h2>Outline of Game</h2>
+	<p>The assignment Game has various search algorithms. We are using five algorithms: Breadth-First Search,
+		Depth First Search, and A* search with two heuristics (and average between them) to allow the spider
+		to find the ant.</p>
+	</div>
+	<div id="box2">
+	<h2>How the program works</h2>
+	<p>In the program, I use web workers to reduce the processing, which allows the browser to remain responsive
+		 even though the CPU has huge operations that may be taking place. The user can select some options that
+	     can change the results, The results are drawn on the screen using a canvas element.</p>
+	</div>
+	<div id="box3">
+	<h2>Results </h2>
+	<p> 
+		Breadth First Search: low to medieum average moves, but must process a lot of nodes (low number of moves at high CPU cost).<br><br>
+		Depth First Search: high average moves, but must process many nodes (high number of moves at high CPU cost, very bad).<br><br>
+		A* Search: low average moves, with low number of processed nodes (low number of moves at low CPU cost,	very good).
+	</p>
+	</div>
+	<div id="box4">
+	<h2>Why A* algorithm very Good?</h2>
+	<p>Because of the heuristics functions, In A* search, we can know what direction the ant is closest to, so we search in that
+	   direction instead of randomly wandering around the board. Sorting makes the spider such as creative.</p>
+	</div>
+	<div id="box5">
+	<footer>
+		Built by Abdullah Salhab</a>.
+	</footer>
+	</div>
+</body>
+</html>

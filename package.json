@@ -1,0 +1,17 @@
+{
+  "name": "Spider-Ant Game",
+  "version": "1.0.0",
+  "main": "init.js",
+  "scripts": {
+    "start": "electron-packager ."
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "electron": "^12.0.7",
+    "electron-packager": "^15.2.0",
+    "sound-play": "^1.1.0"
+  },
+  "devDependencies": {},
+  "description": ""
+}
