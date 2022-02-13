@@ -1,4 +1,5 @@
 # The Spider Game
+![image](https://user-images.githubusercontent.com/99129061/153744775-84e0faff-391a-4f78-ac42-b75a4f8a7d7c.png)
 
 ## Introduction
 In this project you will be implementing a game that simulates a spider hunting for food. This game is inspired by many earlier games, such as the snake game available for mobile hones and many other platforms (video available at http://www.youtube.com/watch?v=z_Ct-lKwSgo).
@@ -23,6 +24,5 @@ The Spider location (12,9) and the Ant location (5,5).
 1. Implement a third heuristic which takes the average of the first two heuristics.
 1. Write a short report (no more than two (2) pages) about the state space of the game, and about the choice of your heuristics.
 
-## image of the game :
-![image](https://user-images.githubusercontent.com/99129061/153744775-84e0faff-391a-4f78-ac42-b75a4f8a7d7c.png)
+
 
