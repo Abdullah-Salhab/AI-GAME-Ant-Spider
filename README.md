@@ -1,8 +1,9 @@
+## AI Game Link:
+<https://abdullah-salhab.github.io/AI-GAME-Ant-Spider>
+
 # The Spider Game
 ![image](https://user-images.githubusercontent.com/99129061/153744775-84e0faff-391a-4f78-ac42-b75a4f8a7d7c.png)
 
-## Game Link:
-<https://abdullah-salhab.github.io/AI-GAME-Ant-Spider>
 
 ## Introduction
 In this project you will be implementing a game that simulates a spider hunting for food. This game is inspired by many earlier games, such as the snake game available for mobile hones and many other platforms (video available at http://www.youtube.com/watch?v=z_Ct-lKwSgo).
