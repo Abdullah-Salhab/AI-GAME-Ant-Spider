@@ -15,7 +15,7 @@ The above Figure illustrates the game. The yellow box shows the location of the 
 To simplify the game, assume that the ant only takes a single step forward each time the spider moves. All your search algorithms should predict the motion of the ant along with the spider, because the position to which it will move next is deterministic. If the ant makes a move that would take it off the board, the spider has failed to catch it, and a new ant is spawned as if it had been caught.
 Similar to the snake game, the game only ends if the spider makes a move that causes it to step off the board.
 Configuration Playing Board ( Size i.e.,16 X 16)
-The Spider location (12,9) and the Ant location (5,5).
+The Spider location (12, 9) and the Ant location (5,5).
 
 
 ![Screenshot 2022-02-13 100745](https://user-images.githubusercontent.com/99129061/153744631-5730ab19-8a0c-41a7-b8ad-e83274597f8b.png)
